@@ -1,0 +1,283 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    background-color: #010922;
+}
+
+h2 {
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+/* Mobile Menu Styling */
+
+.hamburgerStroke {
+    color: white;
+    border-top: 0.0625rem solid;
+    height: 0.5625rem;
+    width: 1.875rem;
+}
+
+.hamburgerWrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mobileMenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.25rem;
+}
+
+/* End */
+
+/* Main padding styling */
+
+.mainPadding {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+/* End */
+
+/* Hero Section */
+
+.heroUnique {
+    color: #AAD9D9;
+    font-family: Outfit, sans-serif;
+    font-size: 2rem;
+    line-height: 2.3625rem;
+    font-weight: 700;
+}
+
+h1 {
+    color: white;
+    font-family: Outfit, sans-serif;
+    font-size: 2rem;
+    line-height: 2.3625rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-family: Satoshi, sans-serif;
+    font-size: 1rem;
+    color: white;
+    line-height: 1.35rem;
+    font-weight: 400;
+}
+
+.heroP {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.heroBtn {
+    color: white;
+    font-size: 1rem;
+    font-family: Outfit,sans-serif;
+    line-height: 1.26rem;
+    font-weight: 500;
+    background: linear-gradient(96.39deg, #4F48BB 0.06%, #27899D 100.06%);
+    border-radius: 3.125rem;
+    padding: 1.125rem 1.5625rem;
+    border-style: none;
+}
+
+.heroImg {
+    max-width: 100%;
+}
+
+.heroImgWrap {
+    margin-top: 4rem;
+}
+
+.heroTxtWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroWrap {
+    margin-top: 4.5rem;
+}
+
+.heroTxtWrap {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.betaWrap {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: linear-gradient(135.85deg, rgba(20, 24, 64, 0.7) 0%, rgba(128, 128, 215, 0.2) 100%);
+    padding: 0.3125rem 0.625rem;
+    border-radius: 3.125rem;
+    margin-bottom: 2rem;
+}
+
+.arrowIcon {
+    margin-left: 0.3125rem;
+}
+
+/* @keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.heroImg {
+    animation: rotate 20s infinite linear;
+} */
+
+/* End */
+
+/* Card Section */
+
+.cardTop {
+    font-size: 0.9375rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.cardHeading {
+    font-size: 1.875rem;
+    font-weight: 700;
+    font-family: Outfit, sans-serif;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+}
+
+.cardHeading1 {
+    background: linear-gradient(180deg, #8080D7 31.73%, #CA93EA 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardHeading2 {
+    color: #E9BE76;
+}
+
+.cardHeading3 {
+    background: linear-gradient(180deg, #AAD9D9 0%, #3CAADE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cardHeading4 {
+    color:#AF52DE;
+}
+
+.cardImg {
+    max-width: 100%;
+}
+
+.cardTxtWrap {
+    margin-bottom: 1rem;
+}
+
+.cardContainer {
+    padding-left: 0.9375rem;
+    padding-top: 1.875rem;
+    padding-right: 0.9375rem;
+    padding-bottom: 1.875rem;
+}
+
+.cardWrap {
+    background: linear-gradient(135.85deg, rgba(20, 24, 64, 0.7) 0%, rgba(128, 128, 215, 0.2) 100%);
+    border-radius: 2.5rem;
+    margin-bottom: 48px;
+}
+
+.allCardsWrap {
+    margin-top: 8rem;
+}
+
+.cardWrap4 {
+    margin-bottom: 0;
+}
+
+/* End */
+
+/* User Feedback Styles */
+
+.userFeedbackSpan {
+    font-size: 20px;
+    font-family: Outfit, sans-serif;
+    font-weight: 600;
+    opacity: 0.6;
+}
+
+.userFeedbackHeading {
+    font-size: 20px;
+    color: white;
+}
+
+.userFeedbackCon {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135.85deg, rgba(20, 24, 64, 0.7) 0%, rgba(128, 128, 215, 0.2) 100%);
+    padding: 20px 16px;
+    border-radius: 30px;
+}
+
+.userHeading {
+    color: #34C759;
+    font-family: Outfit, sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
