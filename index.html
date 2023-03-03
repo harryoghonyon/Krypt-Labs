@@ -7,26 +7,43 @@
     <title>Krypt Labs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href=""C:\Users\Harry Oghonyon\VS Code
-    Projects\Krypt-Labs\Satoshi-Regular.woff"" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <header>
       <nav class="mobileMenu">
         <a href="/index.html">
           <div class="mobileLogoWrap">
-            <img src="/Krypt Logo (mobile & desktop).svg" alt="" />
+            <img src="./assets/img/Krypt Logo (mobile & desktop).svg" alt="" />
           </div>
         </a>
 
         <div class="hamburgerWrap">
-          <div class="hamburgerStroke"></div>
-          <div class="hamburgerStroke"></div>
+          <div
+            class="hamburgerStroke hamburgerStroke1"
+            id="hamburgerStroke1"
+          ></div>
+          <div
+            class="hamburgerStroke hamburgerStroke2"
+            id="hamburgerStroke2"
+          ></div>
+        </div>
+
+        <div class="hamburgerMenuSection" id="hamburgerMenuSection">
+          <div class="hamburgerLinksContainer">
+            <a href="./about" class="hamburgerWrap">
+              <li class="hamburgerLink">About</li>
+            </a>
+            <a href="" class="hamburgerWrap">
+              <li class="hamburgerLink">Projects</li>
+            </a>
+            <a href="" class="hamburgerWrap">
+              <li class="hamburgerLink">Earn</li>
+            </a>
+            <a href="" class="hamburgerWrap">
+              <li class="hamburgerLink">Contact</li>
+            </a>
+          </div>
         </div>
       </nav>
     </header>
@@ -40,7 +57,11 @@
             <div class="heroTxtWrap">
               <div class="betaWrap">
                 <p>We're beta testing</p>
-                <img class="arrowIcon" src="/arrow icon.svg" alt="" />
+                <img
+                  class="arrowIcon"
+                  src="./assets/img/arrow icon.svg"
+                  alt=""
+                />
               </div>
 
               <h1>
@@ -53,9 +74,11 @@
               </p>
               <button class="heroBtn">Start Minting NFTs</button>
             </div>
+            <!-- <div class="heroImgWrap"> -->
             <div class="heroImgWrap">
-              <img src="/hero globe.svg" class="heroImg" alt="" />
+              <img src="./assets/img/hero globe.svg" class="heroImg" alt="" />
             </div>
+            <!-- </div> -->
           </div>
         </section>
 
@@ -65,74 +88,98 @@
 
         <section class="cardSection">
           <div class="allCardsWrap">
-            <div class="cardWrap">
-              <div class="cardContainer">
-                <div class="cardTxtWrap">
-                  <p class="cardTop">MINTING</p>
-                  <h3 class="cardHeading cardHeading1">Group minting</h3>
-                  <p class="cardP">
-                    Minting NFTs with your friends can be a fun and
-                    collaborative experience. You can pool your creative talents
-                    to brainstorm ideas for marketing and split the profits.
-                  </p>
-                </div>
+            <div class="ipadCardWrap ipadCardWrap1">
+              <div class="cardWrap" id="cardWrap">
+                <div class="cardContainer">
+                  <div class="cardTxtWrap">
+                    <p class="cardTop">MINTING</p>
+                    <h3 class="cardHeading cardHeading1">Group minting</h3>
+                    <p class="cardP">
+                      Minting NFTs with your friends can be a fun and
+                      collaborative experience. You can pool your creative
+                      talents to brainstorm ideas for marketing and split the
+                      profits.
+                    </p>
+                  </div>
 
-                <div class="cardImgWrap">
-                  <img src="/Card Img 1.svg" class="cardImg" alt="" />
+                  <div class="cardImgWrap">
+                    <img
+                      src="./assets/img/Card Img 1.svg"
+                      class="cardImg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="cardWrap cardWrap2" id="cardWrap">
+                <div class="cardContainer">
+                  <div class="cardTxtWrap">
+                    <p class="cardTop">MINTING</p>
+                    <h3 class="cardHeading cardHeading2">Group minting</h3>
+                    <p class="cardP">
+                      Minting NFTs with your friends can be a fun and
+                      collaborative experience. You can pool your creative
+                      talents to brainstorm ideas for marketing and split the
+                      profits.
+                    </p>
+                  </div>
+
+                  <div class="cardImgWrap">
+                    <img
+                      src="./assets/img/Card Img 2.svg"
+                      class="cardImg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
 
-            <div class="cardWrap">
-              <div class="cardContainer">
-                <div class="cardTxtWrap">
-                  <p class="cardTop">MINTING</p>
-                  <h3 class="cardHeading cardHeading2">Group minting</h3>
-                  <p class="cardP">
-                    Minting NFTs with your friends can be a fun and
-                    collaborative experience. You can pool your creative talents
-                    to brainstorm ideas for marketing and split the profits.
-                  </p>
-                </div>
+            <div class="ipadCardWrap ipadCardWrap2">
+              <div class="cardWrap cardWrap3" id="cardWrap">
+                <div class="cardContainer">
+                  <div class="cardTxtWrap">
+                    <p class="cardTop">MINTING</p>
+                    <h3 class="cardHeading cardHeading3">Group minting</h3>
+                    <p class="cardP">
+                      Minting NFTs with your friends can be a fun and
+                      collaborative experience. You can pool your creative
+                      talents to brainstorm ideas for marketing and split the
+                      profits.
+                    </p>
+                  </div>
 
-                <div class="cardImgWrap">
-                  <img src="/Card Img 2.svg" class="cardImg" alt="" />
-                </div>
-              </div>
-            </div>
-
-            <div class="cardWrap">
-              <div class="cardContainer">
-                <div class="cardTxtWrap">
-                  <p class="cardTop">MINTING</p>
-                  <h3 class="cardHeading cardHeading3">Group minting</h3>
-                  <p class="cardP">
-                    Minting NFTs with your friends can be a fun and
-                    collaborative experience. You can pool your creative talents
-                    to brainstorm ideas for marketing and split the profits.
-                  </p>
-                </div>
-
-                <div class="cardImgWrap">
-                  <img src="/Card Img 3.svg" class="cardImg" alt="" />
+                  <div class="cardImgWrap">
+                    <img
+                      src="./assets/img/Card Img 3.svg"
+                      class="cardImg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="cardWrap cardWrap4">
-              <div class="cardContainer">
-                <div class="cardTxtWrap">
-                  <p class="cardTop">MINTING</p>
-                  <h3 class="cardHeading cardHeading4">Group minting</h3>
-                  <p class="cardP">
-                    Minting NFTs with your friends can be a fun and
-                    collaborative experience. You can pool your creative talents
-                    to brainstorm ideas for marketing and split the profits.
-                  </p>
-                </div>
+              <div class="cardWrap cardWrap4" id="cardWrap">
+                <div class="cardContainer cardContainer4">
+                  <div class="cardTxtWrap">
+                    <p class="cardTop">MINTING</p>
+                    <h3 class="cardHeading cardHeading4">Group minting</h3>
+                    <p class="cardP">
+                      Minting NFTs with your friends can be a fun and
+                      collaborative experience. You can pool your creative
+                      talents to brainstorm ideas for marketing and split the
+                      profits.
+                    </p>
+                  </div>
 
-                <div class="cardImgWrap">
-                  <img src="/Card Img 4.svg" class="cardImg" alt="" />
+                  <div class="cardImgWrap">
+                    <img
+                      src="./assets/img/Card Img 4.svg"
+                      class="cardImg"
+                      alt=""
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -224,7 +271,10 @@
             <div class="logoCopyrightWrap">
               <a href="/index.html">
                 <div class="mobileLogoWrap">
-                  <img src="/Krypt Logo (mobile & desktop).svg" alt="" />
+                  <img
+                    src="./assets/img/Krypt Logo (mobile & desktop).svg"
+                    alt=""
+                  />
                 </div>
               </a>
               <p class="copyrightTxt">
@@ -232,9 +282,9 @@
               </p>
             </div>
             <div class="socialWrap">
-              <img src="/Facebook Icon.svg" alt="" />
-              <img src="/Twitter Icon.svg" alt="" />
-              <img src="/Instagram Icon.svg" alt="" />
+              <img src="./assets/img/Facebook Icon.svg" alt="" />
+              <img src="./assets/img/Twitter Icon.svg" alt="" />
+              <img src="./assets/img/Instagram Icon.svg" alt="" />
             </div>
           </div>
 
@@ -270,6 +320,6 @@
         </div>
       </div>
     </main>
-    <script src="/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
