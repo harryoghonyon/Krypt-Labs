@@ -305,6 +305,7 @@ p {
     border-radius: 3.125rem;
     padding: 1.125rem 1.5625rem;
     border-style: none;
+    cursor: pointer;
 }
 
 .heroImg {
@@ -489,7 +490,9 @@ p {
 }
 
 .cardHeading4 {
-    color:#AF52DE;
+    background: linear-gradient(180deg, #A4DAA7 0%, #A5D9A8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .cardImg {
@@ -678,6 +681,16 @@ p {
         padding: 30px 16px;
     }
 }
+
+@media (min-width: 1024px) {
+    .betaFeedbackWrap {
+        margin-top: 11rem;
+    }
+
+    .userFeedbackConWrap {
+        min-width: 25%;
+    }
+}
 /* End */
 
 /* Join Waitlist Styles */
@@ -702,6 +715,7 @@ p {
     padding: 1.125rem 1.5625rem;
     border-style: none;
     color: white;
+    cursor: pointer;
 }
 
 .joinWaitlistWrap {
@@ -711,6 +725,11 @@ p {
     margin-top: 8.5rem;
 }
 
+@media (min-width: 1024px) {
+    .joinWaitlistWrap {
+        margin-top: 11rem;
+    }
+}
 /* Footer Styling */
 
 .socialWrap {
@@ -721,7 +740,7 @@ p {
 
 .copyrightTxt {
     font-size: 0.875rem;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 .logoCopyrightWrap {
@@ -754,9 +773,13 @@ p {
     text-decoration: none;
     font-family: satoshi;
     font-size: 1rem;
-    opacity: 0.4;
+    opacity: 0.6;
     color: white;
     margin-bottom: 1rem;
+}
+
+.footerLinks:hover {
+    opacity: 1;
 }
 
 .footerLinkBlock {
@@ -771,6 +794,8 @@ p {
 
 .footerContainer {
     margin-top: 10rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 @media only screen and (min-width: 768px) {
@@ -791,8 +816,23 @@ p {
 @media (min-width: 1024px) {
     .joinWaitlistHeading {
         font-size: 2.5rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
     }
 }
 
+@media (min-width: 1024px) {
+    .footerContainer {
+        margin-top: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        column-gap: 4rem;
+    }
+
+    .footerSection {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 11rem;
+    }
+}
+
+    
 /**?

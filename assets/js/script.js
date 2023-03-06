@@ -42,21 +42,3 @@ document.addEventListener('click', (event) => {
       hamburgerStroke2.classList.remove('rotate2');
     }
 });
-
-
-const feedbackWrap = document.querySelector('.feedbackWrap');
-const userFeedbackConWrap = document.querySelector('.userFeedbackConWrap');
-
-const userFeedbackConWrap1 = userFeedbackConWrap.firstElementChild;
-
-feedbackWrap.appendChild(userFeedbackConWrap1.cloneNode(true));
-
-const feedbackWrapWidth = feedbackWrap.getBoundingClientRect().width;
-
-userFeedbackConWrap.style.animation = `scroll 10s linear infinite ${containerWidth}px`;
-
-userFeedbackConWrap.addEventListener('animationiteration', () => {
-  const newUserFeedbacwrP = userFeedbackConWrap1.cloneNode(true);
-  userFeedbackConWrap.removeChild(firstItem);
-  userFeedbackConWrap.appendChild(newItem);
-});
