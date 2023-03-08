@@ -1,19 +1,4 @@
-// const heroImg = document.querySelector('.heroImg');
-
-// function rotate() {
-//   heroImg.style.transform = 'rotate(0deg)';
-//   heroImg.animate([
-//     { transform: 'rotate(0deg)' },
-//     { transform: 'rotate(360deg)' }
-//   ], {
-//     duration: 20000,
-//     iterations: Infinity,
-//     easing: 'linear'
-//   });
-// }
-
-// rotate();
-
+// Hamburger menu code
 const hamburgerWrap = document.querySelector('.hamburgerWrap');
 const hamburgerMenuSection = document.querySelector('.hamburgerMenuSection');
 
@@ -42,3 +27,14 @@ document.addEventListener('click', (event) => {
       hamburgerStroke2.classList.remove('rotate2');
     }
 });
+
+// End
+
+const footerLinkBlock = document.querySelectorAll(".footerLinkBlock");
+
+console.log("footerLinkBlock ", footerLinkBlock)
+
+footerLinkBlock.forEach((element, i) => {
+  console.log({ [i]: element})
+  element.addEventListener("click", e => element.classList.toggle("toggled"))
+})

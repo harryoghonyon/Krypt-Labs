@@ -83,6 +83,10 @@ h2 {
     line-height: 1.875rem;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Mobile Menu Styling */
 
 .hamburgerStroke {
@@ -170,21 +174,21 @@ h2 {
     left: 0;
     right: 0;
     top: 64px;
-    bottom: 0;
-    /* overflow-y: scroll; */
     background-color: #010922;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    padding-bottom: 1.5rem;
     transition: all 0.3s ease-in-out;
+    overflow: hidden;
 }
 
 .hamburgerMenuSection {
-    display: none;
+    height: 0px;
+    transition: all .4s ease-in-out;
 }
 
 .hamburgerMenuSection.active {
-    display: block;
+    padding-bottom: 1.5rem;
+    height: calc(100vh - 64px);
 }
 
 /* End */
@@ -210,6 +214,11 @@ h2 {
     font-weight: 500;
     margin-right: 2.5rem;
     opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.desktopNavLinks:hover {
+    opacity: 1;
 }
 
 .mintNftBtnTxt {
@@ -229,6 +238,12 @@ h2 {
     text-decoration: none;
     padding: 1.125rem 1.75rem;
     border-radius: 3.75rem;
+    transition: all 0.3s ease;
+}
+
+.mintNftBtn:hover {
+    /* background: #15183F; */
+    box-shadow: 0px 0px 40px 0px #23276099;
 }
 
 .desktopNavLinksContainer {
@@ -306,6 +321,11 @@ p {
     padding: 1.125rem 1.5625rem;
     border-style: none;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.heroBtn:hover {
+    box-shadow: 0px 0px 40px 0px #4250AF80;
 }
 
 .heroImg {
@@ -325,12 +345,20 @@ p {
 
 .heroWrap {
     margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .heroTxtWrap {
     padding-left: 1rem;
     padding-right: 1rem;
 }
+
+/* .betaP {
+    z-index: 2;
+} */
 
 .betaWrap {
     display: flex;
@@ -344,6 +372,23 @@ p {
     border-image-slice: 1;
     /* border-radius: 3.125rem; */
 }
+
+/* .betaWrap::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(180deg, #7E73D8 0%, #3B61AB 36.46%, #6FCFC9 76.04%, #AAD9D9 100%);
+    animation: rotate 4s infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
 
 .tabArrowIcon {
     display: none;
@@ -382,12 +427,6 @@ p {
 }
 
 @media only screen and (min-width: 768px) {
-    .heroWrap {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
     .heroImg {
         margin: 5rem 0rem;
     }
@@ -543,6 +582,7 @@ p {
 
     #cardWrap {
         margin-bottom: 0rem;
+        width: 45%;
     }
     
     .cardWrap2 {
@@ -563,6 +603,7 @@ p {
     .ipadCardWrap {
         overflow-x: hidden;
         gap: 2rem;
+        justify-content: center;
 
     }
 
@@ -716,6 +757,11 @@ p {
     border-style: none;
     color: white;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.joinWaitlistBtn:hover {
+    box-shadow: 0px 0px 40px 0px #4250AF80;
 }
 
 .joinWaitlistWrap {
@@ -728,6 +774,12 @@ p {
 @media (min-width: 1024px) {
     .joinWaitlistWrap {
         margin-top: 11rem;
+    }
+
+    .joinWaitlistHeading {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+        line-height: 3.15rem;
     }
 }
 /* Footer Styling */
@@ -776,6 +828,12 @@ p {
     opacity: 0.6;
     color: white;
     margin-bottom: 1rem;
+    transition: all 0.3s ease;
+    width: max-content;
+}
+
+.footerLinks:hover {
+    opacity: 1;
 }
 
 .footerLinks:hover {
@@ -790,6 +848,7 @@ p {
 
 .footerLinksWrap {
     margin-top: 72px;
+    margin-bottom: 3rem;
 }
 
 .footerContainer {
@@ -798,7 +857,19 @@ p {
     padding-right: 1.5rem;
 }
 
-@media only screen and (min-width: 768px) {
+.footerLinkBlock > .linkWrap {
+    height: 0rem;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    border-bottom: 0.2px solid #FFFFFF33;
+}
+
+.footerLinkBlock.toggled > .linkWrap {
+    height: 120px;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (min-width: 769px) {
     .footerContainer {
         display: grid;
         grid-auto-flow: column;
@@ -811,12 +882,11 @@ p {
         grid-auto-flow: column;
         column-gap: 2rem
     }
-}
 
-@media (min-width: 1024px) {
-    .joinWaitlistHeading {
-        font-size: 2.5rem;
-        margin-bottom: 2rem;
+    .footerLinkBlock > .linkWrap {
+        height: max-content;
+        overflow: auto;
+        border: none;
     }
 }
 
