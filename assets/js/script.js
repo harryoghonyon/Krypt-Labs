@@ -30,6 +30,8 @@ document.addEventListener('click', (event) => {
 
 // End
 
+// Footer Opener code
+
 const footerLinkBlock = document.querySelectorAll(".footerLinkBlock");
 
 console.log("footerLinkBlock ", footerLinkBlock)
@@ -39,9 +41,15 @@ footerLinkBlock.forEach((element, i) => {
   element.addEventListener("click", e => element.classList.toggle("toggled"))
 })
 
+// End
+
+// Preloader code
+
 window.addEventListener("DOMContentLoaded", function () {
   const preloader = document.querySelector(".preloader");
   setTimeout(function () {
     preloader.classList.add("fade-out");  
   }, 5000);
 });
+
+// End
