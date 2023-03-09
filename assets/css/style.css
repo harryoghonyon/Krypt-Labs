@@ -93,6 +93,47 @@ h2 {
     line-height: 1.875rem;
 }
 
+.fade-out {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preloader {
+    background-color: #010922;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 10;
+    display: grid;
+    place-items: center;
+    transition: opacity 2s ease-in-out;
+}
+
+.preloaderImg {
+    max-width: 100%;
+}
+  
+.preloaderImg {
+    animation-name: scaleInOut;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+  
+@keyframes scaleInOut {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+}
+
 /* Mobile Menu Styling */
 
 .hamburgerStroke {

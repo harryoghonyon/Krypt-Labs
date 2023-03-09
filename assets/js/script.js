@@ -38,3 +38,10 @@ footerLinkBlock.forEach((element, i) => {
   console.log({ [i]: element})
   element.addEventListener("click", e => element.classList.toggle("toggled"))
 })
+
+window.addEventListener("DOMContentLoaded", function () {
+  const preloader = document.querySelector(".preloader");
+  setTimeout(function () {
+    preloader.classList.add("fade-out");  
+  }, 5000);
+});
