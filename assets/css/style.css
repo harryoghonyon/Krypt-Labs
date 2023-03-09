@@ -50,7 +50,7 @@ time, mark, audio, video {
 } */
 
 ::-webkit-scrollbar {
-	background-color: #000000;
+	background-color: white;
 }
 ::-webkit-scrollbar-thumb {
     background-color: #13162D;
