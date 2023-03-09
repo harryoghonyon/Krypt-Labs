@@ -4,7 +4,7 @@
     src: url(../fonts/Satoshi-Regular.woff);
 }
 
-:root {
+/* :root {
     --theme-color: #007AFF;
 }
 
@@ -12,7 +12,7 @@
     :root {
         --theme-color: red;
     }
-}
+} */
 
 
 html, body, div, span, applet, object, iframe,
@@ -48,6 +48,16 @@ time, mark, audio, video {
 ::-webkit-scrollbar-thumb {
     background-color: gray;
 } */
+
+::-webkit-scrollbar {
+	background-color: #000000;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #13162D;
+    border-radius: 1.25rem;
+    
+}
+::-webkit-scrollbar-track {}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
