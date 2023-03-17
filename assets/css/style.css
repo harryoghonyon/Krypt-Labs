@@ -935,7 +935,18 @@ p {
     padding-bottom: 1rem;
 }
 
-@media only screen and (min-width: 769px) {
+/* @media only screen and (min-width: 769px) {
+    
+} */
+
+@media (min-width: 1024px) {
+    .footerContainer {
+        margin-top: 4rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        column-gap: 4rem;
+    }
+
     .footerContainer {
         display: grid;
         grid-auto-flow: column;
@@ -954,15 +965,6 @@ p {
         height: max-content;
         overflow: auto;
         border: none;
-    }
-}
-
-@media (min-width: 1024px) {
-    .footerContainer {
-        margin-top: 4rem;
-        padding-left: 7rem;
-        padding-right: 7rem;
-        column-gap: 4rem;
     }
 
     .footerSection {
